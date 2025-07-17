@@ -18,23 +18,37 @@ I built this project to understand and simulate attacker behavior. It helped me 
 ---
 
 ## Screenshots  
-**Project Folder & Lab Setup**  
-_VirtualBox with Kali Linux & Metasploitable 2 on host-only network_
+### Lab Setup
+![Lab Setup](Lab%20Setup.png)
+Virtual environment with Kali Linux and Metasploitable2 running in VirtualBox
 
-**Nmap Scan Results**  
-_Identified ports and vulnerable services (FTP, HTTP, MySQL, Samba, etc.)_
+### Nmap Scan - Initial Results
+![Nmap Scan Results 1](Nmap%20Scan%20Results%201.png)
+Nmap scanning reveals open ports and services running on Metasploitable2
 
-**Metasploit Exploit**  
-_Remote shell access via vsFTPd 2.3.4 backdoor_
+### Nmap Scan - Service Details
+![Nmap Scan Results 2](Nmap%20Scan%20Results%202.png)
+More detailed enumeration of services (e.g., Apache, MySQL, VSFTPD).
 
-**DVWA SQL Injection**  
-_Manual login bypass and database extraction_
+### Metasploit Exploit - Discovery Phase
+![Metasploit Exploit 1](Metasploit%20Exploit%201.png)
+Used Metasploit to find and prepare an exploit for a vulnerable service..
 
-**XSS Injection in DVWA**  
-_Stored XSS injecting custom script in message board_
+### Metasploit Exploit - Shell Access
+![Metasploit Exploit 2](Metasploit%20Exploit%202.png)
+Successfully gained reverse shell access to Metasploitable2 using an exploit.
 
-**Wireshark Capture**  
-_Intercepted plaintext HTTP POST credentials_
+### SQL Injection on DVWA
+![DVWA SQL Injection](DVWA%20SQL%20Injection.png)
+Performed SQL Injection attack via DVWA to extract database info.
+
+### XSS Injection on DVWA
+![XSS Injection on DVWA](XSS%20injection%20on%20DVWA.png)
+Injected malicious script into DVWA's comment field, triggering a JavaScript alert
+
+### Wireshark Capture
+![Wireshark Capture](Wireshark%20Capture.png)
+Captured and analyzed network packets using Wireshark.
 
 ---
 
